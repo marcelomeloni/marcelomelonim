@@ -86,17 +86,7 @@ const Hero = () => {
 
       </div>
 
-      {/* Scroll hint */}
-      <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 opacity-40"
-        animate={{ y: [0, 6, 0] }}
-        transition={{ repeat: Infinity, duration: 2, ease: 'easeInOut' }}
-      >
-        <span className="text-muted text-[10px] tracking-widest uppercase">scroll</span>
-        <svg width="12" height="16" viewBox="0 0 12 16" fill="none">
-          <path d="M6 0v12M1 8l5 7 5-7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-muted"/>
-        </svg>
-      </motion.div>
+     
     </section>
   );
 };
@@ -141,5 +131,6 @@ const TerminalCard = ({ compact = false }) => (
     </div>
   </div>
 );
+
 
 export default Hero;
