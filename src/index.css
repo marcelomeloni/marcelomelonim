@@ -1,0 +1,51 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Tema Dark (Padrão) - UI/UX focado em contraste suave */
+  --background: #09090b; /* Um preto ligeiramente azulado, menos agressivo */
+  --foreground: #fafafa; /* Branco quase puro para texto principal */
+  --muted: #a1a1aa;     /* Cinza para textos secundários */
+  --accent: #1bff11;    /* Um azul ciano para destaque (ex: o cursor piscando) */
+}
+
+/*
+No futuro, para implementar o Light Mode, você só precisará adicionar isso:
+
+.light-mode {
+  --background: #ffffff;
+  --foreground: #18181b;
+  --muted: #71717a;
+  --accent: #0ea5e9;
+}
+*/
+.swiper-pagination-bullet {
+  background: var(--muted) !important;
+  opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--accent) !important;
+  opacity: 1 !important;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+}
+body {
+  @apply bg-background text-foreground font-sans antialiased;
+  /* Adiciona um gradiente sutil de fundo para não ficar chapado */
+  background-image: radial-gradient(circle at top center, rgba(56, 189, 248, 0.1) 0%, rgba(9, 9, 11, 1) 50%);
+  min-height: 100vh;
+}
+
+/* Classe utilitária para o cursor piscando */
+.blinking-cursor {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: var(--accent); }
+}
