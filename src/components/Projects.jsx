@@ -64,6 +64,15 @@ const Projects = () => {
     github: 'https://github.com/marcelomeloni/reppy', // Ou o link específico se houver
     demo: 'https://mapa.reppy.app.br' // Adicionei campo de demo
   },
+{
+    id: 5,
+    title: 'Heyssy Corporation',
+    desc: 'E-commerce de moda underground com design brutalista. Opera integralmente no Front-End com estados complexos e persistência local (localStorage), incluindo gestão dinâmica de carrinho, autenticação mock, checkout com ViaCEP e sistema completo de pedidos.',
+    img: 'heyssy.png', // Certifique-se de salvar a imagem do projeto com esse nome
+    tags: ['Next.js 15', 'Tailwind CSS', 'Context API', 'E-commerce', 'Front-State'],
+    github: 'https://github.com/marcelomeloni/heyssy-store', // Atualize se o nome do repositório for diferente
+    demo: 'https://heyssycorporation.vercel.app' // Adicione o link do deploy aqui
+  }
 ];
 
   return (
@@ -181,5 +190,6 @@ const Projects = () => {
     </section>
   );
 };
+
 
 export default Projects;
