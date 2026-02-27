@@ -134,7 +134,7 @@ const Projects = () => {
                     <img
                       src={project.img}
                       alt={project.title}
-                      className="w-full h-full object-cover transition-all duration-700 grayscale group-hover:grayscale-0 group-hover:scale-105"
+                      className="w-full h-full object-cotransition-all duration-700 grayscale group-hover:grayscale-0 group-hover:scale-105"
                     />
                   </div>
 
@@ -165,7 +165,7 @@ const Projects = () => {
         rel="noopener noreferrer"
         className="flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-white bg-accent/20 border border-accent/40 hover:bg-accent/30 transition-all duration-300"
       >
-        Ver Mapa
+        Ver Site
       </a>
     )}
     <a
@@ -193,3 +193,4 @@ const Projects = () => {
 
 
 export default Projects;
+
