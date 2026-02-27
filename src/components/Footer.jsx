@@ -49,7 +49,7 @@ const Footer = () => {
   </span>
 </div>
             <p className="text-muted text-sm leading-relaxed max-w-xs">
-              Desenvolvedor Full‑Stack & entusiasta de Web3. Construindo produtos reais desde os laboratórios da faculdade.
+              Desenvolvedor Full‑Stack & entusiasta de Web3. 
             </p>
           
           </div>
@@ -121,5 +121,6 @@ const Footer = () => {
     </footer>
   );
 };
+
 
 export default Footer;
